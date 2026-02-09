@@ -12,7 +12,7 @@ class ChatGPT(QThread):
     def __init__(self, parent=None):
         super().__init__(parent)
         self.queue = Queue()
-        self.openai_api_key = "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"
+        self.openai_api_key = " "
         self.conversation = []
 
     def run(self):
@@ -99,3 +99,4 @@ if __name__ == "__main__":
     chat_window = ChatWindow()
     chat_window.show()
     sys.exit(app.exec())
+
